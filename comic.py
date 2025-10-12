@@ -59,7 +59,7 @@ def strict_output(system_prompt: str,user_prompt: Union[str, List[str]],output_f
         #res = qa({'system_prompt': system_prompt, 'output_format_prompt': output_value_only, 'user_prompt': str(user_prompt)})['text']
         #print(res)
 
-        openai.api_key ='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')'
+        openai.api_key ='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'
 
         conversation = [
             {"role": "system", "content": f"{system_prompt}{output_format_prompt}{error_msg}"},
